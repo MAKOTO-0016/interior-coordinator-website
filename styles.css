@@ -87,6 +87,15 @@ p {
         justify-content: space-between;
         gap: 0;
     }
+    
+    .logo {
+        flex: 0 0 auto;
+        margin-right: auto;
+    }
+    
+    .nav-menu {
+        margin-left: auto;
+    }
 }
 
 .logo {
@@ -911,6 +920,18 @@ section {
 .footer-content {
     text-align: center;
     margin-bottom: 30px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.footer-logo .logo-image {
+    margin-top: 9px;
 }
 
 .footer .logo-text {
