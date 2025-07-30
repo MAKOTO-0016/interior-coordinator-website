@@ -1,3 +1,15 @@
+/* Prevent Flash of Unstyled Content (FOUC) */
+html {
+    visibility: hidden;
+    opacity: 0;
+}
+
+html.loaded {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
 /* Corporate Page Specific Styles */
 
 /* Corporate Hero Section */
@@ -54,6 +66,29 @@
     color: #f8f9fa;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.personal-cta-button {
+    display: inline-block;
+    background: white;
+    color: #333;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    border: 2px solid white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.personal-cta-button:hover {
+    background: #f8f9fa;
+    border-color: #f8f9fa;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    color: #222;
 }
 
 /* Corporate Services Section */

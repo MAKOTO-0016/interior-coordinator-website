@@ -31,6 +31,9 @@ const observer = new IntersectionObserver(function(entries) {
 
 // Observe elements for animation
 document.addEventListener('DOMContentLoaded', function() {
+    // Prevent Flash of Unstyled Content (FOUC)
+    document.documentElement.classList.add('loaded');
+    
     // Add fade-in class to elements that should animate
     const animateElements = document.querySelectorAll('.concept-item, .service-card, .testimonial-card, .gallery-item, .process-step');
     

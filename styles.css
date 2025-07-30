@@ -1,3 +1,15 @@
+/* Prevent Flash of Unstyled Content (FOUC) */
+html {
+    visibility: hidden;
+    opacity: 0;
+}
+
+html.loaded {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
 /* Reset and Base Styles */
 * {
     margin: 0;
@@ -242,19 +254,19 @@ p {
 .fade-in {
     opacity: 0;
     transform: translateY(30px);
-    animation: fadeInUp 1s ease forwards;
+    animation: fadeInUp 2s ease forwards;
 }
 
 .fade-in-delay {
     opacity: 0;
     transform: translateY(30px);
-    animation: fadeInUp 1s ease 0.3s forwards;
+    animation: fadeInUp 2s ease 0.5s forwards;
 }
 
 .fade-in-delay-2 {
     opacity: 0;
     transform: translateY(30px);
-    animation: fadeInUp 1s ease 0.6s forwards;
+    animation: fadeInUp 2s ease 1s forwards;
 }
 
 @keyframes fadeInUp {
