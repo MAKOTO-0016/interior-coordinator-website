@@ -12,6 +12,20 @@ html.loaded {
 
 /* Corporate Page Specific Styles */
 
+/* Corporate Page/* Logo Image Styles */
+.logo-image {
+    height: 38px;
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
+    transition: all 0.3s ease;
+}
+
+.logo-image:hover {
+    filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.2));
+    transform: translateY(-1px);
+}
+
 /* Corporate Hero Section */
 .corporate-hero {
     background: linear-gradient(135deg, #4a90c2 0%, #6ba8d6 100%);
@@ -94,7 +108,7 @@ html.loaded {
 /* Corporate Services Section */
 .corporate-services {
     padding: 100px 0;
-    background: linear-gradient(135deg, #ebe4d7 0%, #f0e9dc 100%);
+    background: white;
 }
 
 .corporate-services-grid {
@@ -264,7 +278,7 @@ html.loaded {
 /* Process Timeline Section */
 .corporate-process {
     padding: 100px 0;
-    background: linear-gradient(135deg, #ebe4d7 0%, #f0e9dc 100%);
+    background: white;
 }
 
 .process-timeline {
@@ -335,11 +349,11 @@ html.loaded {
 /* Corporate Contact Section */
 .corporate-contact {
     padding: 100px 0;
-    background: linear-gradient(135deg, #f5f1eb 0%, #faf9f7 100%);
+    background: white;
 }
 
 .corporate-contact .contact-form {
-    background: white;
+    background: linear-gradient(135deg, #f5f1eb 0%, #faf9f7 100%);
 }
 
 .corporate-contact .submit-button {
