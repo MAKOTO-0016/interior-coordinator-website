@@ -94,7 +94,7 @@ html.loaded {
 /* Corporate Services Section */
 .corporate-services {
     padding: 100px 0;
-    background: #fefefe;
+    background: linear-gradient(135deg, #ebe4d7 0%, #f0e9dc 100%);
 }
 
 .corporate-services-grid {
@@ -264,7 +264,7 @@ html.loaded {
 /* Process Timeline Section */
 .corporate-process {
     padding: 100px 0;
-    background: #fefefe;
+    background: linear-gradient(135deg, #ebe4d7 0%, #f0e9dc 100%);
 }
 
 .process-timeline {
